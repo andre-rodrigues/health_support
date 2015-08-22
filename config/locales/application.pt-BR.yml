@@ -1,0 +1,23 @@
+pt-BR:
+  activerecord:
+
+  activerecord:
+    models:
+      interested_user:
+        one: Usuário interessado
+        other: Usuários interessados
+
+    attributes:
+      interested_user:
+        name: Nome
+        phone: Telefone
+        email: E-mail
+        specialty: Especialidade
+        message: Mensagem
+
+    errors:
+      models:
+        interested_user:
+          attributes:
+            name:
+              blank: não pode ficar em branco
