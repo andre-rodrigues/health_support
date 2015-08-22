@@ -1,0 +1,20 @@
+= form_for @interested_user, url: root_path do |f|
+  %ul
+    %li
+      = f.label :name
+      = f.text_field :name
+    %li
+      = f.label :email
+      = f.text_field :email
+    %li
+      = f.label :phone
+      = f.text_field :phone
+    %li
+      = f.label :specialty
+      = f.text_field :specialty
+    %li
+      = f.label :message
+      = f.text_area :message
+
+    %li
+      = f.submit "Enviar"

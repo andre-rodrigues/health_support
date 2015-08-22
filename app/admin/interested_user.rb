@@ -1,5 +1,11 @@
 ActiveAdmin.register InterestedUser do
 
+  controller do
+    def authenticate_admin_user!
+      redirect_to root_path
+    end
+  end
+
   config.clear_action_items!
 
   filter :name
