@@ -52,5 +52,5 @@ production:
   adapter: postgresql
   encoding: utf8
   database: health_support_production
-  username: health_support
-  password: <%= ENV['BLEBLET_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['HEALTH_SUPPORT_DATABASE_PASSWORD'] %>
