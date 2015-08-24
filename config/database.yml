@@ -47,13 +47,10 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
 production:
-  adapter: pg
+  adapter: postgresql
   encoding: utf8
-  pool: 5
-  username: root
-  password:
-  host: localhost
   database: health_support_production
   username: health_support
-  password: <%= ENV['HEALTH_SUPPORT_DATABASE_PASSWORD'] %>
+  password: <%= ENV['BLEBLET_DATABASE_PASSWORD'] %>
