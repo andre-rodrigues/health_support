@@ -1,20 +1,32 @@
-= form_for @interested_user, url: root_path do |f|
-  %ul
-    %li
-      = f.label :name
-      = f.text_field :name
-    %li
-      = f.label :email
-      = f.text_field :email
-    %li
-      = f.label :phone
-      = f.text_field :phone
-    %li
-      = f.label :specialty
-      = f.text_field :specialty
-    %li
-      = f.label :message
-      = f.text_area :message
+%header
+  #logo
+    = image_tag asset_path("logo.png"), id: "logo_mark"
+    %h1 HEALTH SUPPORT
+  #contact
+    = image_tag asset_path("phone_icon.png")
+    %span.phone (11) 5052-4527
 
-    %li
+
+#content
+  %section#about
+    %h2 Consultoria Médica
+    %p Acessoria, suporte e comunicação com o objectivo de integrar a necessidade e buscar soluções inovadoras visando estratégias na geração de novas perspectivas.
+
+    #learn_more Saiba Mais
+
+  %section#contact_form
+    .header
+      %h3 Contato
+      %p Para informações, solicitações ou dúvidas
+
+    = form_for @interested_user, url: root_path do |f|
+      = f.text_field :name, placeholder: InterestedUser.human_attribute_name(:name)
+      = f.text_field :email, placeholder: InterestedUser.human_attribute_name(:email)
+      = f.text_field :phone, placeholder: InterestedUser.human_attribute_name(:phone)
+      = f.text_field :specialty, placeholder: InterestedUser.human_attribute_name(:specialty)
+      = f.text_area :message, placeholder: InterestedUser.human_attribute_name(:message)
       = f.submit "Enviar"
+
+  .clear
+%footer
+  %p= "® Copyright #{ Date.current.year } - healthsupport.com.br | Atendimento: (11) 5052-4527"
