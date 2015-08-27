@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$("#learn_more").on("click", function() {
+  $("#learn_more_content").removeClass("hidden");
+});
+
+(function() {
+
+
+})();
