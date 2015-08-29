@@ -11,7 +11,6 @@ class ApplicationController < ActionController::Base
     new_user = InterestedUser.new(permited_params)
     head new_user.save ? :created : :bad_request
   end
-  end
 
   private
 
