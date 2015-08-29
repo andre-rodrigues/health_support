@@ -1,10 +1,3 @@
-%header
-  #logo
-    = image_tag asset_path("full-logo.png"), id: "logo_mark"
-  #contact
-    = image_tag asset_path("phone_icon.png")
-    %span.phone (11) 5052-4527
-
 #content_wrapper
   #fade_layer
   #content
@@ -26,7 +19,6 @@
             %li Comunicação digital
             %li Implementação de estrutura para coletas de amostras biológicas
 
-
     %section#contact_form
       .header
         %h3 Contato
@@ -41,6 +33,3 @@
         = f.submit "Enviar"
 
     .clear
-
-%footer
-  %p= "® Copyright #{ Date.current.year } - healthsupport.com.br | Atendimento: (11) 5052-4527"
