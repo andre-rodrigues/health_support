@@ -56,7 +56,7 @@ pt-BR:
     any: "Qualquer"
     blank_slate:
       content: "Não existem %{resource_name} ainda."
-      link: "Novo"
+      link: ""
     dropdown_actions:
       button_label: "Ações"
     batch_actions:
