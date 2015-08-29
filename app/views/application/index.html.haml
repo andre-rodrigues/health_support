@@ -5,7 +5,6 @@
     = image_tag asset_path("phone_icon.png")
     %span.phone (11) 5052-4527
 
-
 #content_wrapper
   #fade_layer
   #content
@@ -33,7 +32,7 @@
         %h3 Contato
         %p Para informações, solicitações ou dúvidas
 
-      = form_for @interested_user, url: root_path do |f|
+      = form_for @interested_user, url: root_path, remote: true do |f|
         = f.text_field :name, placeholder: InterestedUser.human_attribute_name(:name)
         = f.text_field :email, placeholder: InterestedUser.human_attribute_name(:email)
         = f.text_field :phone, placeholder: InterestedUser.human_attribute_name(:phone)

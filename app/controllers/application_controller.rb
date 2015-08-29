@@ -8,8 +8,9 @@ class ApplicationController < ActionController::Base
   end
 
   def create
-    InterestedUser.create(permited_params)
-    redirect_to root_path
+    new_user = InterestedUser.new(permited_params)
+    head new_user.save ? :created : :bad_request
+  end
   end
 
   private
