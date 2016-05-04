@@ -1,6 +1,13 @@
 = content_for :stylesheets, stylesheet_link_tag('interested_users', media: 'all')
 = content_for :javascripts, javascript_include_tag('interested_users')
 
+%header
+  #logo
+    = image_tag asset_path("full-logo.png"), id: "logo_mark"
+  #contact
+    = image_tag asset_path("phone_icon.png")
+    %span.phone (11) 5052-4527
+
 #content_wrapper
   #fade_layer
   #content
@@ -36,3 +43,6 @@
         = f.submit "Enviar"
 
     .clear
+
+%footer
+  %p= "® Copyright #{ Date.current.year } - healthsupport.com.br | Atendimento: (11) 5052-4527"

@@ -1,0 +1,162 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require fonts
+ *= require normalize
+ */
+
+body {
+  font-family: Lato-Regular;
+  background-color: #ffffff;
+}
+
+.clear {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+// HEADER
+header {
+  box-shadow: 0 2px 4px 0 #e4e4e4;
+  width: 100%;
+}
+
+.menu {
+  width: 68%;
+  text-align: right;
+  display: inline-block;
+
+  a {
+    cursor: pointer;
+    line-height: 90px;
+    margin: 0px 10px;
+    font-size: 15px;
+    color: #9b9b9b;
+
+    &:hover {
+      color: #08c6f9;
+      border-bottom: solid 3px #08c6f9;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.contact {
+  display: inline-block;
+  margin-left: 50px;
+  color: #08c6f9;
+  font-size: 13px;
+
+  img {
+    vertical-align: middle;
+    margin-right: 10px
+  }
+}
+
+
+// CONTENT
+.page {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 420px;
+}
+
+.page .content {
+  position: absolute;
+  max-width: 65%;
+  color: #9b9b9b;
+  left: 50%;
+  margin-left: -30%;
+  top: 50%;
+  margin-top: -13%;
+}
+
+.page-1 .description {
+  width: 50%;
+  display: inline-block;
+  padding-left: 30px;
+  border-left: 1px solid #ccc;
+  font-size: 15px;
+  line-height: 20px;
+  color: #9b9b9b;
+
+  .divider {
+    width: 30%;
+    height: 5px;
+    background-color: #08c6f9;
+  }
+}
+
+.page-1 .logo {
+  vertical-align: top;
+  margin-right: 30px;
+}
+
+.next-page {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  width: 50px;
+  height: 25px;
+  cursor: pointer;
+  margin-left: -25px;
+
+  .arrow {
+    position: absolute;
+    left: 50%;
+  }
+
+  .arrow:after, .arrow:before {
+    cursor: pointer;
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .arrow:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #ffffff;
+    border-width: 20px;
+    margin-left: -20px;
+  }
+
+  .arrow:before {
+    border-color: #fff;
+    border-top-color: #08c6f9;
+    border-width: 24px;
+    margin-left: -24px;
+  }
+}
+
+// FOOTER
+footer {
+  color: #9b9b9b;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 40px;
+  position: absolute;
+  width: 44%;
+  padding: 0 28%;
+  bottom: 0;
+}

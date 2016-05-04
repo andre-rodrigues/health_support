@@ -11,23 +11,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-  <header>
-    <div id= "logo">
-      <%= image_tag asset_path("full-logo.png"), id: "logo_mark" %>
-      </div>
-    <div id="contact">
-      <%= image_tag asset_path("phone_icon.png") %>
-      <span class="phone">(11) 5052-4527</span>
-    </div>
-  </header>
-
   <%= yield %>
-
-  <footer>
-    <p>
-      <%= "® Copyright #{ Date.current.year } - healthsupport.com.br | Atendimento: (11) 5052-4527" %>
-    </p>
-  </footer>
 </body>
 </html>

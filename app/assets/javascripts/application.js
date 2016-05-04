@@ -13,3 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require_self
+
+$(function() {
+  $(window).resize(function() {
+    var headerHeight = $('body > header').height();
+
+    $('.page').css('height', $(window).height() - headerHeight);
+
+  });
+});
