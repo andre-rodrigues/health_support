@@ -15,10 +15,30 @@
 //= require_self
 
 $(function() {
+  resizePages();
+
   $(window).resize(function() {
+    resizePages();
+  });
+
+  function resizePages() {
     var headerHeight = $('body > header').height();
-
     $('.page').css('height', $(window).height() - headerHeight);
+  }
 
+  // =============================================================
+  // Page navigation
+  function navigateToPage(page) {
+    $("html, body").animate({ scrollTop: $(page).position().top }, 'slow', 'swing');
+  }
+
+  $('.page .next-page').on('click', function() {
+    var page = $(this).closest('.page');
+    navigateToPage(page.next('.page'));
+  });
+
+  $('.menu a').on('click', function() {
+    var page = $(this).data('page');
+    navigateToPage('.' + page);
   });
 });
