@@ -1,0 +1,68 @@
+@import 'colors';
+
+.services-list {
+  list-style: none;
+  text-align: center;
+
+  .service {
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    color: $default-text-color;
+
+    &:hover {
+      color: $highlighted-text-color;
+    }
+  }
+
+  img {
+    height: 60px;
+    margin: 0 auto 10px;;
+    display: block;
+  }
+}
+
+.services-gallery {
+  position: relative;
+  width: 600px;
+  overflow: hidden;
+  margin: auto;
+
+  .next, .prev {
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+      color: $highlighted-text-color;
+    }
+  }
+
+  .services {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    display: inline-block;
+    width: 3100px;
+  }
+
+  .service {
+    color: $default-text-color;
+    width: 600px;
+    height: 380px;
+    float: left;
+    text-align: center;
+
+    .title {
+      margin-top: 10px;
+      font-size: 26px;
+      color: $highlighted-text-color;
+    }
+
+    .details {
+      display: block;
+      color: $highlighted-text-color;
+      text-decoration: none;
+      margin-top: 30px;
+    }
+  }
+}

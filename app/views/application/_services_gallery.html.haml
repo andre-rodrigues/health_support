@@ -1,0 +1,39 @@
+%ul.services-list
+  %li.service.tributary{ data: { service: 'service-1' } }
+    = image_tag 'tributary_small'
+    Tributário
+  %li.service.marketing{ data: { service: 'service-3' } }
+    = image_tag 'marketing_small'
+    Marketing
+  %li.service.legal{ data: { service: 'service-2' } }
+    = image_tag 'legal_small'
+    Jurídico
+  %li.service.physical-environment{ data: { service: 'service-4' } }
+    = image_tag 'physical_environment_small'
+    Estrutura Física
+  %li.service.system{ data: { service: 'service-5' } }
+    = image_tag 'system_small'
+    Sistema
+
+.services-gallery
+  %a.prev Voltar
+  %a.next Avançar
+  %ul.services
+    %li.service.tributary
+      = image_tag 'tributary_small'
+      %p.title Tributário
+      %p.description Auxiliamos o profissional a entender o papel de cada um dos colaboradores de sua empresa, oferecendo-lhes recursos para melhor desempenhar suas atividades.
+      = link_to "Mais Detalhes", "#!", class: 'details'
+
+    %li.service.marketing
+      = image_tag 'marketing_small'
+      Marketing
+    %li.service.legal
+      = image_tag 'legal_small'
+      Jurídico
+    %li.service.physical-environment
+      = image_tag 'physical_environment_small'
+      Estrutura Física
+    %li.service.system
+      = image_tag 'system_small'
+      Sistema

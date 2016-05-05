@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require services_gallery
 //= require_self
 
 $(function() {
@@ -29,7 +30,8 @@ $(function() {
   // =============================================================
   // Page navigation
   function navigateToPage(page) {
-    $("html, body").animate({ scrollTop: $(page).position().top }, 'slow', 'swing');
+    var top = $(page).position().top - $('body > header').height();
+    $("html, body").animate({ scrollTop: top }, 'slow', 'swing');
   }
 
   $('.page .next-page').on('click', function() {
@@ -41,4 +43,7 @@ $(function() {
     var page = $(this).data('page');
     navigateToPage('.' + page);
   });
+
+  // Services Gallery
+  new ServicesGallery('.page-2 .services-gallery', '.page-2 .services-list');
 });

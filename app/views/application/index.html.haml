@@ -1,7 +1,7 @@
 %header
   %nav.menu
     %a.institutional{ data: { page: 'page-1' } } Institucional
-    %a.legal{ data: { page: 'page-2' } } Juridico
+    %a.legal{ data: { page: 'page-2' } } Jurídico
     %a.marketing{ data: { page: 'page-3' } } Marketing
     %a.physical-environment{ data: { page: 'page-4' } } Estrutura Física
     %a.human-resources{ data: { page: 'page-5' } } RH - Gestão de pessoas
@@ -26,14 +26,4 @@
 
 
 .page.page-2
-  .content
-    = image_tag asset_path('full-logo.png'), id: 'logo_mark', class: 'logo'
-    .description
-      %p Olá! Somos uma consultoria que desenvolve soluções estratégicas para profissionais da área de saúde, dando suporte ao negocio e criando novas perspectivas dentro do ambiente profissional e corporativo.
-      .divider
-      %p Atendendo profissionais da área da saúde que encontram dificuldades no processo administrativo de sua carreira e de sua clinica, e precisam otimizar recursos para garantir o crescimento de seu negócio.
-
-  .next-page
-    .arrow
-  %footer
-    %p Todos os serviços são desenvolvidos em conformidade com a Resolução CFM 1974/11, que versa sobre a Publicidade e suas restrições no campo da Medicina, além de corroborar com os demais institutos reguladores ligados a área da Saúde.
+  = render 'services_gallery'
