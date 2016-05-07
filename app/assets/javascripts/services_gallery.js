@@ -12,6 +12,8 @@ $(function() {
     this.showSlide = function(index) {
       currentIndex = index;
       var newPosition = slideWidth * index;
+      menu.find('.service').removeClass('active');
+      menu.find('.service:eq(' + currentIndex + ')').addClass('active');
       list.animate({ left: newPosition * -1 }, 'slow', 'swing');
     };
 

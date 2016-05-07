@@ -28,6 +28,13 @@
           background-size: contain;
         }
       }
+
+      &.active {
+        .logo {
+          background: asset-url('tributary_logo_blue.png') no-repeat center;
+          background-size: contain;
+        }
+      }
     }
 
     &[data-service="2"] {
@@ -40,6 +47,13 @@
           background-size: contain;
         }
       }
+
+      &.active {
+        .logo {
+          background: asset-url('marketing_logo_blue.png') no-repeat center;
+          background-size: contain;
+        }
+      }
     }
 
     &[data-service="3"] {
@@ -48,6 +62,13 @@
         background-size: contain;
 
         &:hover {
+          background: asset-url('legal_logo_blue.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+
+      &.active {
+        .logo {
           background: asset-url('legal_logo_blue.png') no-repeat center;
           background-size: contain;
         }
@@ -65,6 +86,13 @@
           background-size: contain;
         }
       }
+
+      &.active {
+        .logo {
+          background: asset-url('physical_environment_logo_blue.png') no-repeat center;
+          background-size: contain;
+        }
+      }
     }
 
     &[data-service="5"] {
@@ -73,6 +101,13 @@
         background-size: contain;
 
         &:hover {
+          background: asset-url('system_logo_blue.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+
+      &.active {
+        .logo {
           background: asset-url('system_logo_blue.png') no-repeat center;
           background-size: contain;
         }
@@ -89,9 +124,16 @@
           background-size: contain;
         }
       }
+
+      &.active {
+        .logo {
+          background: asset-url('tributary_logo_blue.png') no-repeat center;
+          background-size: contain;
+        }
+      }
     }
 
-    &:hover {
+    &:hover, &.active {
       color: $highlighted-text-color;
     }
   }

@@ -3,7 +3,6 @@
   width: 50%;
   min-width: 600px;
   min-height: 290px;
-  background-color: white;
   margin: 10% auto 0;
 
   * {
@@ -29,6 +28,7 @@
   }
 
   label {
+    background-color: white;
     display: block;
     font-size: 14px;
     margin: 0 0 5px 5px;
