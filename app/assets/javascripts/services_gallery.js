@@ -24,6 +24,10 @@ $(function() {
       if ((currentIndex) == 0) return;
       self.showSlide(currentIndex - 1);
     });
+
+    menu.find('.service').on('click', function() {
+      self.showSlide($(this).data('service') - 1);
+    })
   };
 
   window.ServicesGallery = ServicesGallery;

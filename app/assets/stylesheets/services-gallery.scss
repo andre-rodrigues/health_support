@@ -3,17 +3,19 @@
 .services-list {
   list-style: none;
   text-align: center;
+  font-size: 14px;
+  padding: 0;
 
   .service {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 30px;
     cursor: pointer;
     color: $default-text-color;
 
     .logo {
       width: 65px;
       height: 60px;
-      margin: auto;
+      margin: 0 auto 15px;
     }
 
     &[data-service="1"] {
