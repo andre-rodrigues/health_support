@@ -1,0 +1,22 @@
+.contact-wrapper
+
+  .title ENTRE EM CONTATO
+
+  = form_tag '/contact' do
+    .inline-field
+      = label_tag 'name', 'Nome'
+      = text_field_tag 'name'
+
+    .inline-field
+      = label_tag 'email', 'Email'
+      = text_field_tag 'email'
+
+    .inline-field
+      = label_tag 'specialty', 'Especialidade'
+      = text_field_tag 'specialty'
+
+    .field
+      = label_tag 'message', 'Mensagem'
+      = text_area_tag 'message'
+
+    = submit_tag 'Enviar'
