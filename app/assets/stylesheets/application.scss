@@ -13,10 +13,11 @@
  *= require_self
  *= require fonts
  *= require normalize
- *= require services-gallery
  */
 
 @import 'colors';
+@import 'services-gallery';
+@import 'maps';
 
 body {
   font-family: Lato-Regular;
@@ -121,6 +122,10 @@ header {
 // Page 2
 .page-2 {
   margin-top: 60px;
+}
+
+// Page 3
+.page-3 {
 }
 
 // Page navigation

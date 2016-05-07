@@ -1,0 +1,32 @@
+.maps {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: asset-url('maps_background.png') no-repeat;
+  background-size: cover;
+
+  .description {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    margin-top: -140px;
+    width: 370px;
+    min-height: 220px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 35px;
+    color: $default-text-color;
+    font-size: 14px;
+    line-height: 20px;
+
+    .title {
+      color: $highlighted-text-color;
+      padding-bottom: 7px;
+      font-size: 16px;
+      border-bottom: 2px solid $highlighted-text-color;
+    }
+  }
+}
