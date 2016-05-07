@@ -10,15 +10,88 @@
     cursor: pointer;
     color: $default-text-color;
 
+    .logo {
+      width: 65px;
+      height: 60px;
+      margin: auto;
+    }
+
+    &[data-service="1"] {
+      .logo {
+        background: asset-url('tributary_logo_gray.png') no-repeat center;
+        background-size: contain;
+
+        &:hover {
+          background: asset-url('tributary_logo_blue.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
+    &[data-service="2"] {
+      .logo {
+        background: asset-url('marketing_logo_gray.png') no-repeat center;
+        background-size: contain;
+
+        &:hover {
+          background: asset-url('marketing_logo_blue.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
+    &[data-service="3"] {
+      .logo {
+        background: asset-url('legal_logo_gray.png') no-repeat center;
+        background-size: contain;
+
+        &:hover {
+          background: asset-url('legal_logo_blue.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
+
+    &[data-service="4"] {
+      .logo {
+        background: asset-url('physical_environment_logo_gray.png') no-repeat center;
+        background-size: contain;
+
+        &:hover {
+          background: asset-url('physical_environment_logo_blue.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
+    &[data-service="5"] {
+      .logo {
+        background: asset-url('system_logo_gray.png') no-repeat center;
+        background-size: contain;
+
+        &:hover {
+          background: asset-url('system_logo_blue.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
+    &[data-service="6"] {
+      .logo {
+        background: asset-url('tributary_logo_gray.png') no-repeat center;
+        background-size: contain;
+
+        &:hover {
+          background: asset-url('tributary_logo_blue.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
     &:hover {
       color: $highlighted-text-color;
     }
-  }
-
-  img {
-    height: 60px;
-    margin: 0 auto 10px;;
-    display: block;
   }
 }
 
