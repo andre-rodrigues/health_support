@@ -1,11 +1,13 @@
 %header
   %nav.menu
-    %a.institutional{ href: root_path, data: { page: 'page-1' } } Institucional
-    %a.legal{ data: { page: 'page-2' } } Jurídico
-    %a.marketing{ data: { page: 'page-3' } } Marketing
-    %a.physical-environment{ data: { page: 'page-4' } } Estrutura Física
-    %a.human-resources{ data: { page: 'page-5' } } RH - Gestão de pessoas
-    %a.financial{ data: { page: 'page-6' } } Financeiro
+    = link_to root_path, class: 'home' do
+      = image_tag 'logo_small.png'
+    = link_to 'Institucional', institutional_path, data: { page: 'page-1' }, class: 'institutional active'
+    = link_to 'Jurídico', legal_path, data: { page: 'page-2' }, class: 'legal'
+    = link_to 'Marketing', marketing_path, data: { page: 'page-3' }, class: 'marketing'
+    = link_to 'Estrutura Física', physical_environment_path, data: { page: 'page-4' }, class: 'physical-environment'
+    = link_to 'Sistema', system_path, data: { page: 'page-5' }, class: 'system'
+    = link_to 'Tributário', tributary_path, data: { page: 'page-6' }, class: 'tributary'
 
   .contact
     = image_tag asset_path('phone_icon.png')

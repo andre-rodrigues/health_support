@@ -1,0 +1,43 @@
+%header
+  %nav.menu
+    = link_to root_path, class: 'home' do
+      = image_tag 'logo_small.png'
+    = link_to 'Institucional', institutional_path, data: { page: 'page-1' }, class: 'institutional'
+    = link_to 'Jurídico', legal_path, data: { page: 'page-2' }, class: 'legal active'
+    = link_to 'Marketing', marketing_path, data: { page: 'page-3' }, class: 'marketing'
+    = link_to 'Estrutura Física', physical_environment_path, data: { page: 'page-4' }, class: 'physical-environment'
+    = link_to 'Sistema', system_path, data: { page: 'page-5' }, class: 'system'
+    = link_to 'Tributário', tributary_path, data: { page: 'page-6' }, class: 'tributary'
+
+  .contact
+    = image_tag asset_path('phone_icon.png')
+    %span.phone (11) 5052-4527
+
+.page.page-1
+  .content
+    %h1.title CONSULTORIA TRIBUTÁRIA
+    %p Planejamos receitas e despesas a longo prazo, definindo metas e estimando resultados.
+
+    %h2.subtitle Principais serviços:
+    %p Planejamento Tributário para Clínicas Médicas e Laboratórios de Análises Clínicas;
+    %p Análise da Estrutura Societária da Pessoa Jurídica
+    %p Revisão dos Impostos Recolhidos nos últimos 5 anos
+    %p Análise de Documentos Fiscais Emitidos
+    %p Lei de Olho nos Impostos
+    %p Orientações sobre o carne leão
+    %p Orientação Tributária para abertura de clínicas médicas
+
+
+%footer
+  .address
+    %span.mark
+    .content
+      %p Avenida Paulista 1560
+      %p São Paulo | SP
+
+  .content
+    %p Tel- (11) 5052-9527
+    %p info@healthsupport.com
+
+  .content.copyright
+    %p COPYRIGHT LINES @ | DEVELOPED | ALL RIGHTS RESERVED

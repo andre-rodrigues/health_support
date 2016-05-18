@@ -1,0 +1,53 @@
+= content_for :stylesheets, stylesheet_link_tag('institutional', media: 'all')
+
+%header
+  %nav.menu
+    = link_to root_path, class: 'home' do
+      = image_tag 'logo_small.png'
+    = link_to 'Institucional', institutional_path, data: { page: 'page-1' }, class: 'institutional active'
+    = link_to 'Jurídico', legal_path, data: { page: 'page-2' }, class: 'legal'
+    = link_to 'Marketing', marketing_path, data: { page: 'page-3' }, class: 'marketing'
+    = link_to 'Estrutura Física', physical_environment_path, data: { page: 'page-4' }, class: 'physical-environment'
+    = link_to 'Sistema', system_path, data: { page: 'page-5' }, class: 'system'
+    = link_to 'Tributário', tributary_path, data: { page: 'page-6' }, class: 'tributary'
+
+  .contact
+    = image_tag asset_path('phone_icon.png')
+    %span.phone (11) 5052-4527
+
+.page.page-1
+  .content
+    %h1.title INSTITUCIONAL
+    %p.highlighted Trabalhamos para encontrar o equilíbrio entre a saúde e o corporativo, auxiliando o profissional a entender os pontos fracos do seu negócio e identificar oportunidades de melhoria.
+    %p Buscamos, através da vivência acadêmica e da experiência de mercado de nossos profissionais, apresentar resultados de acordo com os objetivos de nossos clientes, criando padrões e protocolos, reduzindo custos e preparando suas equipes para oferecer qualidade e conforto aos seus pacientes.
+
+    .mission
+      %p.title MISSÃO
+      %p Identificar as dificuldades que os profissionais da área da saúde encontram no ambiente coorporativo e criar estratégias de negocio para auxiliá-los a obter melhores resultados.
+    .vision
+      %p.title VISÃO
+      %p A Health Support almeja ser referência no fornecimento de serviços administrativos para clínicas médicas, e criar vínculos de longo prazo com seus parceiros e clientes.
+    .values
+      %p.title VALORES
+      %p
+        Excelência no atendimento;
+        %br
+        Ética com transparência e responsabilidade
+        %br
+        Crescimento e aprimoramento contínuo
+        %br
+        Lealdade e compromentimento com nossos clientes, parceiros e colaboradores
+
+%footer
+  .address
+    %span.mark
+    .content
+      %p Avenida Paulista 1560
+      %p São Paulo | SP
+
+  .content
+    %p Tel- (11) 5052-9527
+    %p info@healthsupport.com
+
+  .content.copyright
+    %p COPYRIGHT LINES @ | DEVELOPED | ALL RIGHTS RESERVED

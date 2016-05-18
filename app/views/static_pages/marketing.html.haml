@@ -1,0 +1,38 @@
+%header
+  %nav.menu
+    = link_to root_path, class: 'home' do
+      = image_tag 'logo_small.png'
+    = link_to 'Institucional', institutional_path, data: { page: 'page-1' }, class: 'institutional'
+    = link_to 'Jurídico', legal_path, data: { page: 'page-2' }, class: 'legal'
+    = link_to 'Marketing', marketing_path, data: { page: 'page-3' }, class: 'marketing active'
+    = link_to 'Estrutura Física', physical_environment_path, data: { page: 'page-4' }, class: 'physical-environment'
+    = link_to 'Sistema', system_path, data: { page: 'page-5' }, class: 'system'
+    = link_to 'Tributário', tributary_path, data: { page: 'page-6' }, class: 'tributary'
+
+  .contact
+    = image_tag asset_path('phone_icon.png')
+    %span.phone (11) 5052-4527
+
+.page.page-1
+  .content
+    %h1.title CONSULTORIA MARKETING
+    %p Auxiliamos o profissional a definir seus objetivos de negócio, apontando caminhos estratégicos para alcançá-los.
+
+    %h2.subtitle Principais serviços:
+    %p Desenvolvimento de Identidade Visual
+    %p Comunicação digital (desenvolvimento de site, artes para e-mail marketing)
+    %p Comunicação impressa (cartão de visita, prontuário médico, folders, cartão de internet)
+
+%footer
+  .address
+    %span.mark
+    .content
+      %p Avenida Paulista 1560
+      %p São Paulo | SP
+
+  .content
+    %p Tel- (11) 5052-9527
+    %p info@healthsupport.com
+
+  .content.copyright
+    %p COPYRIGHT LINES @ | DEVELOPED | ALL RIGHTS RESERVED

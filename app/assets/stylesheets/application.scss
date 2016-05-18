@@ -56,10 +56,18 @@ header {
     color: $default-text-color;
     text-decoration: none;
 
-    &:hover {
+    &:hover:not(.home), &.active {
       color: $highlighted-text-color;
       border-bottom: solid 3px #08c6f9;
       padding-bottom: 8px;
+    }
+  }
+
+  .home {
+    margin-right: 40px;
+
+    img {
+      vertical-align: middle;
     }
   }
 }
@@ -78,7 +86,18 @@ header {
 
 
 // CONTENT
+.title {
+  font-size: 24px;
+  color: $highlighted-text-color;
+}
+
+.subtitle {
+  color: $highlighted-text-color;
+}
+
 .page {
+  font-size: 14px;
+  line-height: 20px;
   min-height: 420px;
   position: relative;
 }

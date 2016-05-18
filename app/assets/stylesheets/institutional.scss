@@ -1,0 +1,28 @@
+@import 'colors';
+
+.page {
+  text-align: center;
+
+  .content {
+    margin-left: -33%;
+  }
+}
+
+.highlighted {
+  color: $highlighted-text-color;
+}
+
+.mission, .vision, .values {
+  width: 30%;
+  float: left;
+  margin-right: 20px;
+
+  .title {
+    font-size: 20px;
+  }
+}
+
+.values {
+  width: 32%;
+  margin-right: 0;
+}
