@@ -54,6 +54,7 @@ header {
     margin: 0px 10px;
     font-size: 14px;
     color: $default-text-color;
+    text-decoration: none;
 
     &:hover {
       color: $highlighted-text-color;

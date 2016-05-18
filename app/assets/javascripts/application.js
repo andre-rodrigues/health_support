@@ -39,11 +39,6 @@ $(function() {
     navigateToPage(page.next('.page'));
   });
 
-  $('.menu a').on('click', function() {
-    var page = $(this).data('page');
-    navigateToPage('.' + page);
-  });
-
   // Services Gallery
   new ServicesGallery('.page-2 .services-gallery', '.page-2 .services-list');
 });
