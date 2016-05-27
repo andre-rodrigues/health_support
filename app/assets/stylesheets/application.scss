@@ -17,6 +17,7 @@
 
 @import 'colors';
 @import 'services-gallery';
+@import 'menu';
 
 body {
   font-family: Lato-Regular;
@@ -32,7 +33,7 @@ body {
 }
 
 // HEADER
-header {
+body > header {
   box-shadow: 0 2px 4px 0 #e4e4e4;
   background-color: white;
   width: 100%;
@@ -41,58 +42,18 @@ header {
   z-index: 999;
 }
 
-.menu {
-  width: 68%;
-  text-align: right;
-  display: inline-block;
-
-  a {
-    cursor: pointer;
-    line-height: 90px;
-    margin: 0px 10px;
-    font-size: 14px;
-    color: $default-text-color;
-    text-decoration: none;
-
-    &:hover:not(.home), &.active {
-      color: $highlighted-text-color;
-      border-bottom: solid 3px #08c6f9;
-      padding-bottom: 8px;
-    }
-  }
-
-  .home {
-    margin-right: 40px;
-
-    img {
-      vertical-align: middle;
-    }
-  }
-}
-
-.contact {
-  display: inline-block;
-  margin-left: 50px;
-  color: $highlighted-text-color;
-  font-size: 13px;
-
-  img {
-    vertical-align: middle;
-    margin-right: 10px
-  }
-}
-
-
 // CONTENT
 .title {
   font-size: 24px;
   color: $highlighted-text-color;
   margin-bottom: 25px;
+  font-family: 'brandon-bld';
+  font-weight: normal;
 }
 
 .subtitle {
   font-size: 18px;
-  margin-top: 25px;
+  margin-top: 45px;
   color: $highlighted-text-color;
 }
 

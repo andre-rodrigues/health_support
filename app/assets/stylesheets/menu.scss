@@ -1,0 +1,43 @@
+@import 'colors';
+
+.menu {
+  width: 71%;
+  text-align: right;
+  display: inline-block;
+
+  a {
+    cursor: pointer;
+    line-height: 90px;
+    margin: 0px 10px;
+    font-size: 13px;
+    color: $default-text-color;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover:not(.home), &.active {
+      color: $highlighted-text-color;
+      border-bottom: solid 3px #08c6f9;
+      padding-bottom: 8px;
+    }
+  }
+
+  .home {
+    margin-right: 40px;
+
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+
+.contact {
+  display: inline-block;
+  margin-left: 50px;
+  color: $highlighted-text-color;
+  font-size: 13px;
+
+  img {
+    vertical-align: middle;
+    margin-right: 10px
+  }
+}

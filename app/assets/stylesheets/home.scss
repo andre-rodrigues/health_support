@@ -16,6 +16,7 @@
  */
 
 @import 'colors';
+@import 'menu';
 @import 'services-gallery';
 @import 'maps';
 @import 'contact';
@@ -41,35 +42,6 @@ header {
   position: fixed;
   top: 0;
   z-index: 999;
-}
-
-.menu {
-  width: 68%;
-  text-align: right;
-  display: inline-block;
-
-  a {
-    cursor: pointer;
-    line-height: 90px;
-    margin: 0px 10px;
-    font-size: 14px;
-    color: $default-text-color;
-    text-decoration: none;
-
-    &:hover:not(.home), &.active {
-      color: $highlighted-text-color;
-      border-bottom: solid 3px #08c6f9;
-      padding-bottom: 8px;
-    }
-  }
-
-  .home {
-    margin-right: 40px;
-
-    img {
-      vertical-align: middle;
-    }
-  }
 }
 
 .contact {
