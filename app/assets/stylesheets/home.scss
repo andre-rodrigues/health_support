@@ -35,7 +35,7 @@ body {
 }
 
 // HEADER
-header {
+body > header {
   box-shadow: 0 2px 4px 0 #e4e4e4;
   background-color: white;
   width: 100%;
@@ -43,19 +43,6 @@ header {
   top: 0;
   z-index: 999;
 }
-
-.contact {
-  display: inline-block;
-  margin-left: 50px;
-  color: $highlighted-text-color;
-  font-size: 13px;
-
-  img {
-    vertical-align: middle;
-    margin-right: 10px
-  }
-}
-
 
 // CONTENT
 .title {

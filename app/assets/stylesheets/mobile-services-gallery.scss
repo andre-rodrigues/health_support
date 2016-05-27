@@ -1,0 +1,82 @@
+@import 'colors';
+
+.services-list {
+  display: none;
+}
+
+.services-gallery {
+  position: relative;
+  width: 400px;
+  margin: 50px auto;
+
+  .view-port {
+    width: 400px;
+    overflow: hidden;
+  }
+
+  .next, .prev {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    display: block;
+    width: 53px;
+    height: 90px;
+  }
+
+  .next {
+    right: -140px;
+    background: asset-url('gallery_arrow_right_gray.png') no-repeat;
+    background-size: 80%;
+
+    &:hover {
+      background: asset-url('gallery_arrow_right_blue.png') no-repeat;
+      background-size: 80%;
+    }
+  }
+
+  .prev {
+    left: -140px;
+    background: asset-url('gallery_arrow_left_gray.png') no-repeat;
+    background-size: 80%;
+
+    &:hover {
+      background: asset-url('gallery_arrow_left_blue.png') no-repeat;
+      background-size: 80%;
+    }
+  }
+
+  .services {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    display: inline-block;
+    width: 3100px;
+  }
+
+  .service {
+    color: $default-text-color;
+    width: 400px;
+    height: 380px;
+    float: left;
+    text-align: center;
+
+    .title {
+      margin-top: 10px;
+      font-size: 26px;
+      color: $highlighted-text-color;
+    }
+
+    .details {
+      display: block;
+      color: $highlighted-text-color;
+      text-decoration: none;
+      margin-top: 30px;
+    }
+
+    .logo {
+      height: 110px;
+    }
+  }
+}

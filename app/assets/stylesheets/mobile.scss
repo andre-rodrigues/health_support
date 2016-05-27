@@ -1,0 +1,64 @@
+@import 'colors';
+@import 'mobile-services-gallery';
+
+// Home
+.menu, .contact, .page footer, .next-page {
+  display: none;
+}
+
+.page {
+  position: static;
+
+  .content {
+    max-width: 100%;
+    position: static;
+    margin: auto;
+    text-align: center;
+
+    .logo {
+      margin: 10px 0 20px;
+    }
+
+    .description {
+      border: none;
+      width: 80%;
+
+      .divider {
+        width: 80%;
+        margin: auto;
+        height: 3px;
+      }
+    }
+  }
+}
+
+// MAPS
+.page-3 {
+  position: relative;
+}
+
+.maps .description {
+  width: 270px;
+}
+
+// Contact form
+.contact-wrapper {
+  min-width: 380px;
+  max-width: 380px;
+  padding: 10px;
+
+  .inline-field, .field {
+    width: 100%;
+    margin: 10px 0;
+    display: block;
+  }
+}
+
+// Footer
+body > footer {
+  .copyright {
+    border-top: 1px solid $border-color;
+    margin: 25px 0;
+    padding-top: 25px;
+  }
+}

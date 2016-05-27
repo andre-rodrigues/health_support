@@ -16,10 +16,11 @@
 //= require_self
 
 $(function() {
-  resizePages();
+  if ($(window).width() > 700) resizePages();
+
 
   $(window).resize(function() {
-    resizePages();
+    if ($(window).width() > 700) resizePages();
   });
 
   function resizePages() {
