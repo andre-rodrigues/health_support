@@ -29,6 +29,13 @@ $(function() {
 
     menu.find('.service').on('click', function() {
       self.showSlide($(this).data('service') - 1);
+    });
+
+    $(container).find('.footer-navigation a').on('click', function() {
+      var links = $(container).find('.footer-navigation a');
+      self.showSlide(links.index(this));
+      links.removeClass('active');
+      $(this).addClass('active');
     })
   };
 
