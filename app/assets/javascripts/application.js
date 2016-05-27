@@ -16,6 +16,21 @@
 //= require_self
 
 $(function() {
+
+  $('.service .open-details').on('click', function() {
+    var content = $(this).next('.content');
+    var linkDescription = $(this).find('.more');
+
+    if (content.is(':visible')) {
+      content.slideUp(function() {
+        linkDescription.show();
+      });
+    } else {
+      linkDescription.hide();
+      content.slideDown();
+    }
+  });
+
   // Services Gallery
   new ServicesGallery('.page-2 .services-gallery', '.page-2 .services-list');
 });

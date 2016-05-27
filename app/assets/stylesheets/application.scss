@@ -87,9 +87,12 @@ header {
 .title {
   font-size: 24px;
   color: $highlighted-text-color;
+  margin-bottom: 25px;
 }
 
 .subtitle {
+  font-size: 18px;
+  margin-top: 25px;
   color: $highlighted-text-color;
 }
 
@@ -99,11 +102,47 @@ header {
   min-height: 420px;
 }
 
-.page .content {
+.page > .content {
   max-width: 65%;
   color: $default-text-color;
-  margin: 150px auto 0;
+  margin: 150px auto 50px;
+
+  .service {
+    clear: both;
+  }
+
+  .service p {
+    margin-bottom: 2px;
+  }
+
+  .open-details {
+    float: left;
+    text-decoration: none;
+    color: $highlighted-text-color;
+
+    span {
+      padding: 0 4px;
+      border-radius: 10px;
+      border: 1px solid $highlighted-text-color;
+    }
+
+    .more {
+      display: inline;
+    }
+  }
+
+  .details {
+    .content {
+      font-size: 13px;
+      display: none;
+      width: 450px;
+      float: left;
+      margin-top: 0;
+      margin-left: 10px;
+    }
+  }
 }
+
 
 // FOOTER
 body > footer {

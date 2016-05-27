@@ -18,15 +18,70 @@
     %h1.title CONSULTORIA TRIBUTÁRIA
     %p Planejamos receitas e despesas a longo prazo, definindo metas e estimando resultados.
 
-    %h2.subtitle Principais serviços:
-    %p Planejamento Tributário para Clínicas Médicas e Laboratórios de Análises Clínicas;
-    %p Análise da Estrutura Societária da Pessoa Jurídica
-    %p Revisão dos Impostos Recolhidos nos últimos 5 anos
-    %p Análise de Documentos Fiscais Emitidos
-    %p Lei de Olho nos Impostos
-    %p Orientações sobre o carne leão
-    %p Orientação Tributária para abertura de clínicas médicas
+    %p.subtitle Principais serviços:
 
+    .service
+      %p Planejamento Tributário para Clínicas Médicas e Laboratórios de Análises Clínicas;
+      .details
+        = link_to "#!", class: 'open-details' do
+          %span +
+          .more Mais
+        %p.content Ao identificarmos as atividades desenvolvidas pela Clínica e o volume de faturamento em cada atividade, definimos a melhor forma de apuração de lucro (Lucro Real, Lucro Presumido ou Simples Nacional) para cada empresa.
+      .clear
+
+    .service
+      %p Análise da Estrutura Societária da Pessoa Jurídica
+      .details
+        = link_to "#!", class: 'open-details' do
+          %span +
+          .more Mais
+        %p.content Ao registrarmos um contrato/alteração contratual da empresa, a simples opção pelo Cartório ou pela Junta Comercial pode resultar em economia para a empresa.
+      .clear
+
+    .service
+      %p Revisão dos Impostos Recolhidos nos últimos 5 anos
+      .details
+        = link_to "#!", class: 'open-details' do
+          %span +
+          .more Mais
+        %p.content Refazemos as apurações de Impostos dos últimos e verificamos a possibilidade de recuperação de créditos de forma administrativa, sem complicações judiciais.
+      .clear
+
+    .service
+      %p Análise de Documentos Fiscais Emitidos
+      .details
+        = link_to "#!", class: 'open-details' do
+          %span +
+          .more Mais
+        %p.content Revisamos as notas fiscais emitidas pela empresa e orientamos seus funcionários à emiti-las corretamente.
+      .clear
+
+    .service
+      %p Lei de Olho nos Impostos
+      .details
+        = link_to "#!", class: 'open-details' do
+          %span +
+          .more Mais
+        %p.content Você sabe do que estamos falando? O que é IBPT? Sua Clínica informa o valor dos impostos nas notas fiscais emitidas? Cuidado com as multas do Procon!!!
+      .clear
+
+    .service
+      %p Orientações sobre o carne leão
+      .details
+        = link_to "#!", class: 'open-details' do
+          %span +
+          .more Mais
+        %p.content Orientar aos médicos que emitem recibos na pessoa física sobre as mudanças na forma de declarar estes rendimentos na Declaração Pessoa Física de 2016 referente os Recibos emitidos em 2015 ("DMED da pessoa física").
+      .clear
+
+    .service
+      %p Orientação Tributária para abertura de clínicas médicas
+      .details
+        = link_to "#!", class: 'open-details' do
+          %span +
+          .more Mais
+        %p.content (definição do Objeto Social e da Carga Tributária da clínica, antes de realizar o Registro da Empresa na Receita Federal (CNPJ);
+      .clear
 
 %footer
   .address
