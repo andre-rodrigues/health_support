@@ -16,6 +16,29 @@
 //= require_self
 
 $(function() {
+  resizePages();
+
+  $(window).resize(function() {
+    resizePages();
+  });
+
+  function resizePages() {
+    var headerHeight = $('body > header').height();
+    $('.page').css('height', $(window).height() - headerHeight);
+  }
+
+  // =============================================================
+  // Page navigation
+  function navigateToPage(page) {
+    var top = $(page).position().top - $('body > header').height();
+    $("html, body").animate({ scrollTop: top }, 'slow', 'swing');
+  }
+
+  $('.page .next-page').on('click', function() {
+    var page = $(this).closest('.page');
+    navigateToPage(page.next('.page'));
+  });
+
   // Services Gallery
   new ServicesGallery('.page-2 .services-gallery', '.page-2 .services-list');
 });

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HealthSupport</title>
+  <%= stylesheet_link_tag 'home', media: 'all' %>
+  <%= yield :stylesheets %>
+
+  <%= javascript_include_tag 'home' %>
+  <%= yield :javascripts %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= yield %>
+</body>
+</html>

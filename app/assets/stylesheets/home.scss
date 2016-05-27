@@ -17,6 +17,8 @@
 
 @import 'colors';
 @import 'services-gallery';
+@import 'maps';
+@import 'contact';
 
 body {
   font-family: Lato-Regular;
@@ -97,12 +99,109 @@ header {
   font-size: 14px;
   line-height: 20px;
   min-height: 420px;
+  position: relative;
 }
 
 .page .content {
+  position: absolute;
   max-width: 65%;
   color: $default-text-color;
-  margin: 150px auto 0;
+  left: 50%;
+  margin-left: -30%;
+  top: 50%;
+  margin-top: -13%;
+}
+
+// Page 1
+.page-1 {
+  margin-top: 90px;
+  background: asset-url('home_background.png') no-repeat 20% center;
+  background-size: contain;
+
+  footer {
+    color: $default-text-color;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 40px;
+    position: absolute;
+    width: 44%;
+    padding: 0 28%;
+    bottom: 0;
+  }
+}
+
+.page-1 .description {
+  width: 50%;
+  display: inline-block;
+  padding-left: 30px;
+  border-left: 1px solid #ccc;
+  font-size: 15px;
+  line-height: 20px;
+  color: $default-text-color;
+
+  .divider {
+    width: 30%;
+    height: 5px;
+    background-color: #08c6f9;
+  }
+}
+
+.page-1 .logo {
+  vertical-align: top;
+  margin: 30px 30px 0 0;
+}
+
+// Page 2
+.page-2 {
+  margin-top: 60px;
+}
+
+// Page 4
+.page-4 {
+  background: asset-url('home_background.png') no-repeat 20% center;
+  background-size: contain;
+}
+
+// Page navigation
+.next-page {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  width: 50px;
+  height: 25px;
+  cursor: pointer;
+  margin-left: -25px;
+
+  .arrow {
+    position: absolute;
+    left: 50%;
+  }
+
+  .arrow:after, .arrow:before {
+    cursor: pointer;
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .arrow:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: white;
+    border-width: 20px;
+    margin-left: -20px;
+  }
+
+  .arrow:before {
+    border-color: #fff;
+    border-top-color: #08c6f9;
+    border-width: 24px;
+    margin-left: -24px;
+  }
 }
 
 // FOOTER
