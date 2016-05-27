@@ -34,18 +34,6 @@ body {
   display: none;
 }
 
-@media (min-width: 800px) {
-  body {
-    background-color: red;
-  }
-}
-
-@media (max-width: 800px) {
-  body {
-    background-color: blue;
-  }
-}
-
 // HEADER
 body > header {
   box-shadow: 0 2px 4px 0 #e4e4e4;

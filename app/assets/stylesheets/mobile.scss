@@ -1,6 +1,19 @@
 @import 'colors';
 @import 'mobile-services-gallery';
 
+.title {
+  font-size: 24px;
+  color: $highlighted-text-color;
+}
+
+.subtitle {
+  color: $highlighted-text-color;
+}
+
+.page {
+  font-size: 24px;
+}
+
 // Home
 .menu, .contact, .page footer, .next-page {
   display: none;
