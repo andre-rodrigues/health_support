@@ -13,14 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require services_gallery
+//= require mobile_check
 //= require_self
 
 $(function() {
-  if ($(window).width() > 800) resizePages();
-
+  if (!isMobile()) resizePages();
 
   $(window).resize(function() {
-    if ($(window).width() > 800) resizePages();
+    if (!isMobile()) resizePages();
   });
 
   function resizePages() {
