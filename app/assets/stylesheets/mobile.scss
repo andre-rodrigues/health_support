@@ -11,7 +11,8 @@
 }
 
 .page {
-  font-size: 24px;
+  font-size: 26px;
+  line-height: 32px;
 }
 
 // Home
@@ -45,13 +46,29 @@
   }
 }
 
+.page-1 .description {
+  font-size: inherit;
+  line-height: inherit;
+}
+
 // MAPS
 .page-3 {
   position: relative;
+  height: 500px;
 }
 
-.maps .description {
-  width: 270px;
+.maps {
+  .title {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .description {
+    width: 70%;
+    font-size: 0.9em;
+    line-height: inherit;
+    top: 5%;
+  }
 }
 
 // Contact form
@@ -59,6 +76,20 @@
   min-width: 380px;
   max-width: 380px;
   padding: 10px;
+  min-width: 80%;
+  max-width: 80%;
+
+  .title {
+    width: 70%;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  label {
+    width: auto;
+    font-size: 0.9em;
+    line-height: inherit;
+  }
 
   .inline-field, .field {
     width: 100%;
@@ -69,6 +100,9 @@
 
 // Footer
 body > footer {
+  font-size: inherit;
+  line-height: inherit;
+
   .copyright {
     border-top: 1px solid $border-color;
     margin: 25px 0;
@@ -77,8 +111,14 @@ body > footer {
 }
 
 // Services gallery
-.services-gallery .service {
-  height: 300px;
+.services-gallery {
+  .next, .prev {
+    display: none;
+  }
+
+  .service {
+    height: 450px;
+  }
 }
 
 .footer-navigation {
