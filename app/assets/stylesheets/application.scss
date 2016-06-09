@@ -57,6 +57,26 @@ body > header {
   color: $highlighted-text-color;
 }
 
+.infographic {
+  margin-top: 60px;
+
+  .subtitle {
+    color: $default-text-color;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.list {
+  li {
+    line-height: 22px;
+  }
+}
+
 .page {
   font-size: 14px;
   line-height: 20px;

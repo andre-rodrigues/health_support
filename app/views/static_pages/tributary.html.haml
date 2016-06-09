@@ -3,11 +3,11 @@
     = link_to root_path, class: 'home' do
       = image_tag 'logo_small.png'
     = link_to 'Institucional', institutional_path, data: { page: 'page-1' }, class: 'institutional'
-    = link_to 'Jurídico', legal_path, data: { page: 'page-2' }, class: 'legal active'
+    = link_to 'Jurídico', legal_path, data: { page: 'page-2' }, class: 'legal'
     = link_to 'Marketing', marketing_path, data: { page: 'page-3' }, class: 'marketing'
     = link_to 'Estrutura Física', physical_environment_path, data: { page: 'page-4' }, class: 'physical-environment'
     = link_to 'Sistema', system_path, data: { page: 'page-5' }, class: 'system'
-    = link_to 'Tributário', tributary_path, data: { page: 'page-6' }, class: 'tributary'
+    = link_to 'Tributário', tributary_path, data: { page: 'page-6' }, class: 'tributary active'
 
   .contact
     = image_tag asset_path('tel-icon.png')
@@ -62,7 +62,7 @@
         = link_to "#!", class: 'open-details' do
           %span +
           .more Mais
-        %p.content Você sabe do que estamos falando? O que é IBPT? Sua Clínica informa o valor dos impostos nas notas fiscais emitidas? Cuidado com as multas do Procon!!!
+        %p.content Você sabe do que estamos falando? O que é IBPT? Sua Clínica informa o valor dos impostos nas notas fiscais emitidas?
       .clear
 
     .service
@@ -71,7 +71,10 @@
         = link_to "#!", class: 'open-details' do
           %span +
           .more Mais
-        %p.content Orientar aos médicos que emitem recibos na pessoa física sobre as mudanças na forma de declarar estes rendimentos na Declaração Pessoa Física de 2016 referente os Recibos emitidos em 2015 ("DMED da pessoa física").
+        %p.content
+          Orientar aos médicos que emitem recibos na pessoa física sobre as mudanças na forma de declarar estes rendimentos na Declaração Pessoa Física de 2016 referente os Recibos emitidos em 2015 ("DMED da pessoa física").
+          %br
+          = link_to 'E-CAC',  'https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx'
       .clear
 
     .service
@@ -82,6 +85,18 @@
           .more Mais
         %p.content Definição do Objeto Social e da Carga Tributária da clínica, antes de realizar o Registro da Empresa na Receita Federal (CNPJ);
       .clear
+
+    %p.subtitle SEGURO DE VIDA
+    %p Garantia de segurança para os profissionais da Área da Saúde, bem como suas famílias em caso de quaisquer situações adversas.
+    %ul
+      %li Planejamento Financeiro;
+      %li Sucessão Patrimonial.
+
+    %p.subtitle IMPLEMENTAÇÃO DE POSTO DE COLETA DE EXAMES DE ANÁLISES CLÍNICAS
+    %p Aos profissionais da área da saúde que tenham local disponível e interesse em implementar um posto de coleta  de exames laboratoriais em suas clínicas oferecendo uma facilidade aos pacientes e agregando serviço de qualidade à sua empresa, a Health Support tem uma parceria com o Laboratório Health Center Lab.
+    %p Um Laboratório inovador que traz uma experiência diferenciada, focada em oferecer personalização nos atendimentos, nas coletas e nas entregas de resultados, com agilidade e transparência.
+
+
 
 %footer
   .address
