@@ -11,8 +11,8 @@
 }
 
 .page {
-  font-size: 26px;
-  line-height: 32px;
+  font-size: 40px;
+  line-height: 50px;
 }
 
 // Home
@@ -54,7 +54,7 @@
 // MAPS
 .page-3 {
   position: relative;
-  height: 500px;
+  height: 800px;
 }
 
 .maps {
@@ -87,8 +87,18 @@
 
   label {
     width: auto;
-    font-size: 0.9em;
+    font-size: 1.1em;
     line-height: inherit;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+  input {
+    height: 120px;
+  }
+
+  textarea {
+    height: 240px;
   }
 
   .inline-field, .field {
@@ -102,6 +112,7 @@
 body > footer {
   font-size: inherit;
   line-height: inherit;
+  font-size: 30px;
 
   .copyright {
     border-top: 1px solid $border-color;
@@ -112,12 +123,32 @@ body > footer {
 
 // Services gallery
 .services-gallery {
-  .next, .prev {
-    display: none;
+  width: 75%;
+
+  .view-port {
+    width: 100%;
+  }
+
+  .prev {
+    left: -60px;
+  }
+
+  .next {
+    right: -70px;
+  }
+
+  .services {
+    width: 4200px;
   }
 
   .service {
-    height: 450px;
+    height: 700px;
+    width: 730px;
+    padding: 0 15px;
+
+    .title {
+      font-size: inherit;
+    }
   }
 }
 

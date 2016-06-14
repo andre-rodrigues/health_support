@@ -6,7 +6,7 @@ $(function() {
     var prevButton = $(container).find('.prev');
     var nextButton = $(container).find('.next');
     var currentIndex = 0;
-    var slideWidth = $(container).find('.service:first').width();
+    var slideWidth = $(container).find('.service:first').outerWidth(true);
     var list = $(container).find('.services');
 
     this.showSlide = function(index) {
