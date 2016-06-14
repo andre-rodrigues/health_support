@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require services_gallery
+//= require mobile_menu
 //= require_self
 
 $(function() {
@@ -33,4 +34,7 @@ $(function() {
 
   // Services Gallery
   new ServicesGallery('.page-2 .services-gallery', '.page-2 .services-list');
+
+  // Mobile menu
+  new MobileMenu('.mobile-menu');
 });
