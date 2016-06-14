@@ -1,0 +1,54 @@
+@import 'colors';
+
+.mobile-menu {
+  margin-top: 50px;
+  padding: 0 40px;
+
+  .hamburguer-link {
+    float: right;
+    width: 100px;
+    height: 80px;
+  }
+
+  .close-link {
+    width: 100px;
+    height: 80px;
+    display: none;
+    float: right;
+    color: $highlighted-text-color;
+    font-size: 120px;
+    text-decoration: none;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  &.open {
+    .hamburguer-link {
+      display: none;
+    }
+
+    .close-link {
+      display: block;
+    }
+  }
+
+  .links {
+    display: none;
+    clear: both;
+  }
+
+  .links a {
+    clear: both;
+    line-height: 90px;
+    display: block;
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: $default-text-color;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &.active {
+      color: $highlighted-text-color;
+    }
+  }
+}
