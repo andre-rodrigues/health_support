@@ -1,0 +1,56 @@
+@import 'colors';
+@import 'mobile-menu';
+
+.title {
+  font-size: 50px;
+  color: $highlighted-text-color;
+}
+
+.subtitle {
+  font-size: 35px;
+  color: $highlighted-text-color;
+}
+
+.menu, .contact, .page footer, .next-page {
+  display: none;
+}
+
+.page {
+  font-size: 36px;
+  line-height: 60px;
+  position: static;
+  padding: 0 40px;
+
+  .content {
+    max-width: 100%;
+    position: static;
+    margin: auto;
+
+    .logo {
+      margin: 10px 0 20px;
+    }
+
+    .description {
+      border: none;
+      width: 80%;
+
+      .divider {
+        width: 80%;
+        margin: auto;
+        height: 3px;
+      }
+    }
+  }
+}
+
+// Footer
+body > footer {
+  line-height: inherit;
+  font-size: 30px;
+
+  .copyright {
+    border-top: 1px solid $border-color;
+    margin: 25px 0;
+    padding-top: 25px;
+  }
+}
