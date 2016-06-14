@@ -12,7 +12,7 @@
 
 .page {
   font-size: 40px;
-  line-height: 50px;
+  line-height: 52px;
 }
 
 // Home
@@ -118,37 +118,6 @@ body > footer {
     border-top: 1px solid $border-color;
     margin: 25px 0;
     padding-top: 25px;
-  }
-}
-
-// Services gallery
-.services-gallery {
-  width: 75%;
-
-  .view-port {
-    width: 100%;
-  }
-
-  .prev {
-    left: -60px;
-  }
-
-  .next {
-    right: -70px;
-  }
-
-  .services {
-    width: 4200px;
-  }
-
-  .service {
-    height: 700px;
-    width: 730px;
-    padding: 0 15px;
-
-    .title {
-      font-size: inherit;
-    }
   }
 }
 

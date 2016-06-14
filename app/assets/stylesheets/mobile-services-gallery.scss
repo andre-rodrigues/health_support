@@ -1,16 +1,17 @@
 @import 'colors';
 
+// Services gallery
 .services-list {
   display: none;
 }
 
 .services-gallery {
   position: relative;
-  width: 400px;
+  width: 75%;
   margin: 50px auto;
 
   .view-port {
-    width: 400px;
+    width: 100%;
     overflow: hidden;
   }
 
@@ -26,7 +27,7 @@
   }
 
   .next {
-    right: -140px;
+    right: -70px;
     background: asset-url('gallery_arrow_right_gray.png') no-repeat;
     background-size: 80%;
 
@@ -37,7 +38,7 @@
   }
 
   .prev {
-    left: -140px;
+    left: -60px;
     background: asset-url('gallery_arrow_left_gray.png') no-repeat;
     background-size: 80%;
 
@@ -52,19 +53,20 @@
     position: relative;
     padding: 0;
     display: inline-block;
-    width: 3100px;
+    width: 4200px;
   }
 
   .service {
     color: $default-text-color;
-    width: 400px;
-    height: 380px;
+    width: 730px;
+    height: 750px;
     float: left;
     text-align: center;
+    padding: 0 15px;
 
     .title {
+      font-size: inherit;
       margin-top: 10px;
-      font-size: 26px;
       color: $highlighted-text-color;
     }
 
@@ -76,7 +78,7 @@
     }
 
     .logo {
-      height: 110px;
+      height: 190px;
     }
   }
 }
