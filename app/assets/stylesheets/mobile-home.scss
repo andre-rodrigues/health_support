@@ -112,7 +112,6 @@
 // Footer
 body > footer {
   line-height: inherit;
-  font-size: 30px;
   text-align: center;
 
   .address {
@@ -126,12 +125,12 @@ body > footer {
 
   .content, .address {
     display: block;
-    font-size: 20px;
+    font-size: 10px;
     margin-top: 20px;
   }
 
   .copyright {
-    font-size: 15px;
+    font-size: 10px;
     border-top: 1px solid $border-color;
     margin: 25px 0;
     padding: 35px;
