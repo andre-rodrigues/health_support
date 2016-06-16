@@ -1,19 +1,7 @@
 %header
-  %nav.menu
-    = link_to root_path, class: 'home' do
-      = image_tag 'logo_small.png'
-    = link_to 'Institucional', institutional_path, data: { page: 'page-1' }, class: 'institutional'
-    = link_to 'Jurídico', legal_path, data: { page: 'page-2' }, class: 'legal'
-    = link_to 'Marketing', marketing_path, data: { page: 'page-3' }, class: 'marketing'
-    = link_to 'Estrutura Física', physical_environment_path, data: { page: 'page-4' }, class: 'physical-environment'
-    = link_to 'Sistema', system_path, data: { page: 'page-5' }, class: 'system'
-    = link_to 'Tributário', tributary_path, data: { page: 'page-6' }, class: 'tributary active'
+  = render 'shared/desktop_menu'
 
-  .contact
-    = image_tag asset_path('tel-icon.png')
-    %span.phone (11) 5052-4527
-
-= render partial: 'shared/mobile_menu'
+= render 'shared/mobile_menu'
 
 .page
   .content
