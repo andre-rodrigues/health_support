@@ -1,0 +1,15 @@
+.content {
+  font-size: 40px;
+}
+
+.mission, .vision, .values {
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  font-size: 35px;
+
+  .title {
+    margin-top: 10px;
+    font-size: 55px;
+  }
+}
