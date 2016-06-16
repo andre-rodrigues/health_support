@@ -3,6 +3,7 @@
     = image_tag 'hamburguer_menu.png'
   = link_to 'x', '#!', class: 'close-link'
   %nav.links
+    = link_to 'Home', root_path, class: 'home'
     = link_to 'Institucional', institutional_path, data: { page: 'page-1' }, class: 'institutional'
     = link_to 'Jurídico', legal_path, data: { page: 'page-2' }, class: 'legal'
     = link_to 'Marketing', marketing_path, data: { page: 'page-3' }, class: 'marketing'
