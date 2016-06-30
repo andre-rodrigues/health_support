@@ -16,16 +16,28 @@ header {
 }
 
 .menu {
+  position: relative;
   text-align: center;
   display: inline-block;
   margin: 0 10%;
-  position: relative;
-  min-width: 15%;
+  min-width: 250px;
+
+  .close {
+    position: absolute;
+    right: -20px;
+    top: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+  }
 
   .toggle {
     font-size: 1.1em;
     line-height: 90px;
-    text-transform: none;
+  }
+
+  .links-list {
+    overflow: auto;
   }
 
   ul {
@@ -34,23 +46,25 @@ header {
     padding: 0;
 
     li {
-      padding: 0;
+      padding: 12px 0;
+      max-width: 250px;
     }
   }
 
   a {
     cursor: pointer;
-    line-height: 60px;
+    line-height: 30px;
     margin: 0px 10px;
     font-size: 16px;
     color: $default-text-color;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
 
     &:hover:not(.home), &.active {
       color: $highlighted-text-color;
       border-bottom: solid 3px #08c6f9;
-      padding-bottom: 8px;
+      padding-bottom: 5px;
     }
   }
 }

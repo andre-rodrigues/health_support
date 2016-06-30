@@ -6,6 +6,7 @@ $(function() {
 
     this.container = $(container);
     this.toggleButton = this.container.find('nav > .toggle');
+    this.closeButton = this.container.find('nav > .close');
     this.linksList = this.container.find('nav > .links-list');
     this.links = this.linksList.find('a');
 
@@ -20,22 +21,29 @@ $(function() {
       }
     });
 
+    this.closeButton.on('click', function() {
+      hideMenu();
+    })
+
     var showMenu = function() {
+      var newHeight = $(window).height();
+
+      self.closeButton.show();
+      self.linksList.css('height', newHeight - 150);
       self.linksList.slideDown();
       self.toggleButton.addClass('active');
       self.container.animate({
-        backgroundColor: '#444',
-        opacity: 0.9,
-        height: $(window).height()
+        backgroundColor: 'rgba(68, 68, 68, 0.9)',
+        height: newHeight
       }, 400);
     }
 
     var hideMenu = function() {
+      self.closeButton.hide();
       self.linksList.slideUp();
       self.toggleButton.removeClass('active');
       self.container.animate({
-        backgroundColor: '#fff',
-        opacity: 1,
+        backgroundColor: 'rgba(255, 255, 255, 1)',
         height: originalHeight
       }, 400);
     }
