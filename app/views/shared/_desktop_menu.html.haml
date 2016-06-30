@@ -1,12 +1,16 @@
+= link_to root_path, class: 'home' do
+  = image_tag 'logo_small.png'
+
 %nav.menu
-  = link_to root_path, class: 'home' do
-    = image_tag 'logo_small.png'
-  = link_to 'Institucional', institutional_path, data: { page: 'page-1' }, class: "institutional #{ 'active' if current == 'institutional' }"
-  = link_to 'Jurídico', legal_path, data: { page: 'page-2' }, class: "legal #{ 'active' if current == 'legal' }"
-  = link_to 'Marketing', marketing_path, data: { page: 'page-3' }, class: "marketing #{ 'active' if current == 'marketing' }"
-  = link_to 'Estrutura Física', physical_environment_path, data: { page: 'page-4' }, class: "physical-environment #{ 'active' if current == 'physical-environment' }"
-  = link_to 'Sistema', system_path, data: { page: 'page-5' }, class: "system #{ 'active' if current == 'system' }"
-  = link_to 'Tributário', tributary_path, data: { page: 'page-6' }, class: "tributary #{ 'active' if current == 'tributary' }"
+  = link_to 'Menu de serviços', '#!', class: 'toggle'
+
+  %ul.links-list
+    %li= link_to 'Institucional', institutional_path, class: "institutional #{ 'active' if current == 'institutional' }"
+    %li= link_to 'Jurídico', legal_path, class: "legal #{ 'active' if current == 'legal' }"
+    %li= link_to 'Marketing', marketing_path, class: "marketing #{ 'active' if current == 'marketing' }"
+    %li= link_to 'Estrutura Física', physical_environment_path, class: "physical-environment #{ 'active' if current == 'physical-environment' }"
+    %li= link_to 'Sistema', system_path, class: "system #{ 'active' if current == 'system' }"
+    %li= link_to 'Tributário', tributary_path, class: "tributary #{ 'active' if current == 'tributary' }"
 
 .contact
   %span.phone (11) 5052-4527

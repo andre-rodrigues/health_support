@@ -218,6 +218,7 @@ DEPENDENCIES
   devise
   haml-rails
   jquery-rails
+  jquery-ui-rails
   mysql2
   pg
   pry-rails

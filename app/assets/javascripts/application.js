@@ -12,7 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require services_gallery
+//= require desktop_menu
 //= require mobile_menu
 //= require_self
 
@@ -37,4 +39,7 @@ $(function() {
 
   // Mobile menu
   new MobileMenu('.mobile-menu');
+
+  // Desktop menu
+  new DesktopMenu('body > header');
 });
