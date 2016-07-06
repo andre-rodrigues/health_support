@@ -2,20 +2,39 @@
   = image_tag 'logo_small.png'
 
 %nav.menu
-  = link_to 'Menu de serviços', '#!', class: 'toggle'
+  = link_to '#!', class: 'toggle' do
+    Serviços
+    %span.arrow-down &#9660;
+    %span.arrow-up &#9650;
 
-  .close x
+  / .close x
 
   %ul.links-list
-    %li= link_to 'Institucional', institutional_path, class: "institutional #{ 'active' if current == 'institutional' }"
-    %li= link_to 'Jurídico', legal_path, class: "legal #{ 'active' if current == 'legal' }"
-    %li= link_to 'Marketing', marketing_path, class: "marketing #{ 'active' if current == 'marketing' }"
-    %li= link_to 'Estrutura Física', physical_environment_path, class: "physical-environment #{ 'active' if current == 'physical-environment' }"
-    %li= link_to 'Sistema', system_path, class: "system #{ 'active' if current == 'system' }"
-    %li= link_to 'Tributário', tributary_path, class: "tributary #{ 'active' if current == 'tributary' }"
-    %li= link_to 'Treinamento de secretárias', secretary_trainning_path, class: "secretary-trainning #{ 'active' if current == 'secretary_trainning' }"
-    %li= link_to 'Seguro de vida', life_insurance_path, class: "life-insurance #{ 'active' if current == 'life_insurance' }"
-    %li= link_to 'Implementação de posto de coleta de exames', sample_collection_structure_path, class: "sample-collection-structure #{ 'active' if current == 'sample_collection_structure' }"
+    %li
+      = link_to 'Institucional', institutional_path, class: "institutional #{ 'active' if current == 'institutional' }"
+    %li
+      = image_tag 'legal_logo_gray.png', class: 'link-logo'
+      = link_to 'Jurídico', legal_path, class: "legal #{ 'active' if current == 'legal' }"
+    %li
+      = image_tag 'marketing_logo_gray.png', class: 'link-logo'
+      = link_to 'Marketing', marketing_path, class: "marketing #{ 'active' if current == 'marketing' }"
+    %li
+      = image_tag 'physical_environment_logo_gray.png', class: 'link-logo'
+      = link_to 'Estrutura Física', physical_environment_path, class: "physical-environment #{ 'active' if current == 'physical-environment' }"
+    %li
+      = image_tag 'system_logo_gray.png', class: 'link-logo'
+      = link_to 'Sistema', system_path, class: "system #{ 'active' if current == 'system' }"
+    %li
+      = image_tag 'tributary_logo_gray.png', class: 'link-logo'
+      = link_to 'Tributário', tributary_path, class: "tributary #{ 'active' if current == 'tributary' }"
+    %li
+      = image_tag 'secretaries_trainning_logo_gray.png', class: 'link-logo'
+      = link_to 'Treinamento de secretárias', secretary_trainning_path, class: "secretary-trainning #{ 'active' if current == 'secretary_trainning' }"
+    %li
+      = image_tag 'life_insurance_logo_gray.png', class: 'link-logo'
+      = link_to 'Seguro de vida', life_insurance_path, class: "life-insurance #{ 'active' if current == 'life_insurance' }"
+    %li
+      = image_tag 'sample_collection_structure_logo_gray.png', class: 'link-logo'
+      = link_to 'Implementação de posto de coleta de exames', sample_collection_structure_path, class: "sample-collection-structure #{ 'active' if current == 'sample_collection_structure' }"
 
-.contact
-  %span.phone (11) 5052-4527
+= link_to 'Contato', root_path(anchor: 'contato'), class: 'contact-link'

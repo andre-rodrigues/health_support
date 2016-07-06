@@ -31,7 +31,6 @@ $(function() {
     $('.page').css('height', $(window).height() - headerHeight);
   }
 
-  // =============================================================
   // Page navigation
   function navigateToPage(page) {
     var top = $(page).position().top - $('body > header').height();
@@ -51,4 +50,19 @@ $(function() {
 
   // Desktop menu
   new DesktopMenu('body > header');
+
+  // Contact Link
+  function goToContact() {
+    var marginTop = 50;
+    var top = $('.page-4').position().top - $('body > header').height() - marginTop;
+    $("html, body").animate({ scrollTop: top }, 'slow', 'swing');
+  }
+
+  $('header > .contact-link').on('click', function() {
+    goToContact();
+  });
+
+  if (location.hash.match(/contato/)) {
+    goToContact();
+  }
 });

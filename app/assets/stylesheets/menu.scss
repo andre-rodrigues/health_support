@@ -17,10 +17,10 @@ header {
 
 .menu {
   position: relative;
-  text-align: center;
+  text-align: right;
   display: inline-block;
-  margin: 0 10%;
-  min-width: 250px;
+  margin: 0 10px 0 10%;
+  min-width: 500px;
 
   .close {
     position: absolute;
@@ -29,25 +29,55 @@ header {
     color: white;
     cursor: pointer;
     font-size: 30px;
+    display: none;
   }
 
   .toggle {
-    font-size: 1.1em;
+    // font-size: 1.1em;
+    color: $highlighted-text-color;
     line-height: 90px;
+
+    .arrow-up {
+      display: none;
+    }
+
+    .arrow-down {
+      font-size: 0.6em;
+      margin-left: 10px;
+    }
+
+    &:hover:not(.home), &.active {
+      border: none;
+    }
+
+    &.active .arrow-down {
+      font-size: 0.6em;
+      margin-left: 10px;
+      display: none;
+    }
+
+    &.active .arrow-up {
+      font-size: 0.6em;
+      margin-left: 10px;
+      display: inline;
+    }
   }
 
   .links-list {
     overflow: auto;
-  }
-
-  ul {
+    margin: 0;
     display: none;
     list-style: none;
     padding: 0;
 
+    .link-logo  {
+      height: 30px;
+      vertical-align: middle;
+    }
+
     li {
       padding: 12px 0;
-      max-width: 250px;
+      max-width: 500px;
     }
   }
 
@@ -69,12 +99,15 @@ header {
   }
 }
 
-.contact {
+.contact-link {
   display: inline-block;
   color: $highlighted-text-color;
-  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: solid 2px #08c6f9;
+  padding-bottom: 5px;
   vertical-align: top;
-  margin-top: 37px;
+  margin-top: 35px;
 
   img {
     vertical-align: middle;

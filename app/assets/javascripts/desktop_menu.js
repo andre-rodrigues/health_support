@@ -28,7 +28,7 @@ $(function() {
     var showMenu = function() {
       var newHeight = $(window).height();
 
-      self.closeButton.show();
+      self.closeButton.fadeIn();
       self.linksList.css('height', newHeight - 150);
       self.linksList.slideDown();
       self.toggleButton.addClass('active');
@@ -39,7 +39,7 @@ $(function() {
     }
 
     var hideMenu = function() {
-      self.closeButton.hide();
+      self.closeButton.fadeOut();
       self.linksList.slideUp();
       self.toggleButton.removeClass('active');
       self.container.animate({
