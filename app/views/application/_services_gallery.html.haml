@@ -14,6 +14,15 @@
   %li.service.system{ data: { service: '5' } }
     .logo
     Sistema
+  %li.service.secretary-trainning{ data: { service: '6' } }
+    .logo
+    Treinamento de secretárias
+  %li.service.life-insurance{ data: { service: '7' } }
+    .logo
+    Seguro de vida
+  %li.service.sample-collection-structure{ data: { service: '8' } }
+    .logo
+    Posto de coleta de exames de análises clínicas
 
 .services-gallery
   %a.prev
@@ -57,6 +66,28 @@
           %strong sistema de gestão integrada,
           desenvolvido para a HEALTH SUPPORT direcionado para a área da saúde.
         = link_to "Mais Detalhes", system_path, class: 'details'
+
+      %li.service.secretary-trainning
+        = image_tag 'secretaries_trainning_logo.png', class: 'logo'
+        %p.title Treinamento de secretárias
+        %p.description
+          Aplicação de treinamento para secretárias para garantir um padrão de TREINAMENTO DE EQUIPE atendimento comprometido com a excelência.
+        = link_to "Mais Detalhes", secretary_trainning_path, class: 'details'
+
+      %li.service.life-insurance
+        = image_tag 'life_insurance_logo.png', class: 'logo'
+        %p.title Seguro de vida
+        %p.description
+          Garantia de segurança para os profissionais da Área da Saúde, bem como suas famílias em caso de quaisquer situações adversas.
+        = link_to "Mais Detalhes", life_insurance_path, class: 'details'
+
+      %li.service.sample-collection-structure
+        = image_tag 'sample_collection_structure_logo.png', class: 'logo'
+        %p.title Implementação de posto de coleta de exames de análises clínicas
+        %p.description
+          Um Laboratório inovador que traz uma experiência diferenciada, focada em oferecer personalização nos atendimentos, nas coletas e nas entregas de resultados, com agilidade e transparência.
+        = link_to "Mais Detalhes", sample_collection_structure_path, class: 'details'
+
   .footer-navigation
     = link_to " ", "#!", class: 'active'
     = link_to " ", "#!"

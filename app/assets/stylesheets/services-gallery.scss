@@ -8,9 +8,11 @@
 
   .service {
     display: inline-block;
-    margin: 0 30px;
+    margin: 0 10px;
     cursor: pointer;
     color: $default-text-color;
+    max-width: 100px;
+    vertical-align: top;
 
     .logo {
       width: 65px;
@@ -116,18 +118,56 @@
 
     &[data-service="6"] {
       .logo {
-        background: asset-url('tributary_logo_gray.png') no-repeat center;
+        background: asset-url('secretaries_trainning_logo_gray.png') no-repeat center;
         background-size: contain;
 
         &:hover {
-          background: asset-url('tributary_logo_blue.png') no-repeat center;
+          background: asset-url('secretaries_trainning_logo.png') no-repeat center;
           background-size: contain;
         }
       }
 
       &.active {
         .logo {
-          background: asset-url('tributary_logo_blue.png') no-repeat center;
+          background: asset-url('secretaries_trainning_logo.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
+    &[data-service="7"] {
+      .logo {
+        background: asset-url('life_insurance_logo_gray.png') no-repeat center;
+        background-size: contain;
+
+        &:hover {
+          background: asset-url('life_insurance_logo.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+
+      &.active {
+        .logo {
+          background: asset-url('life_insurance_logo.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
+    &[data-service="8"] {
+      .logo {
+        background: asset-url('sample_collection_structure_logo_gray.png') no-repeat center;
+        background-size: contain;
+
+        &:hover {
+          background: asset-url('sample_collection_structure_logo.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+
+      &.active {
+        .logo {
+          background: asset-url('sample_collection_structure_logo.png') no-repeat center;
           background-size: contain;
         }
       }
@@ -187,7 +227,7 @@
     position: relative;
     padding: 0;
     display: inline-block;
-    width: 3100px;
+    width: 8200px;
   }
 
   .service {
