@@ -90,6 +90,9 @@ body > footer {
   .address {
     border-top: 1px solid $border-color;
     padding-top: 20px;
+    font-size: 22px;
+    line-height: 60px;
+    text-align: center;
 
     .mark {
       display: none;
@@ -98,12 +101,16 @@ body > footer {
 
   .content, .address {
     display: block;
-    font-size: 10px;
+    font-size: 22px;
+    line-height: 60px;
+    text-align: center;
     margin-top: 20px;
   }
 
   .copyright {
-    font-size: 10px;
+    font-size: 22px;
+    line-height: 60px;
+    text-align: center;
     border-top: 1px solid $border-color;
     margin: 25px 0;
     padding: 35px;
