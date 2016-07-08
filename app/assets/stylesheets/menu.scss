@@ -73,6 +73,8 @@ header {
     .link-logo  {
       height: 30px;
       vertical-align: middle;
+      filter: brightness(0) invert(1);
+      -webkit-filter: brightness(0) invert(1);
     }
 
     li {
@@ -86,7 +88,7 @@ header {
     line-height: 30px;
     margin: 0px 10px;
     font-size: 16px;
-    color: $default-text-color;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
@@ -104,7 +106,6 @@ header {
   color: $highlighted-text-color;
   text-decoration: none;
   text-transform: uppercase;
-  border-bottom: solid 2px #08c6f9;
   padding-bottom: 5px;
   vertical-align: top;
   margin-top: 35px;
