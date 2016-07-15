@@ -32,8 +32,17 @@ header {
     display: none;
   }
 
+  .contact-link, .institutional-link {
+    color: $highlighted-text-color;
+    line-height: 90px;
+    text-decoration: none;
+
+    &:hover:not(.home), &.active {
+      border: none;
+    }
+  }
+
   .toggle {
-    // font-size: 1.1em;
     color: $highlighted-text-color;
     line-height: 90px;
 
@@ -69,6 +78,8 @@ header {
     display: none;
     list-style: none;
     padding: 0;
+    position: absolute;
+    right: 100px;
 
     .link-logo  {
       height: 30px;

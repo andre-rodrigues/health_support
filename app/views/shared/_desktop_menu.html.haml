@@ -1,7 +1,10 @@
 = link_to root_path, class: 'home' do
   = image_tag 'logo_small.png'
 
+
 %nav.menu
+  = link_to 'Institucional', institutional_path, class: "institutional-link"
+
   = link_to '#!', class: 'toggle' do
     Serviços
     %span.arrow-down &#9660;
@@ -10,8 +13,6 @@
   / .close x
 
   %ul.links-list
-    %li
-      = link_to 'Institucional', institutional_path, class: "institutional #{ 'active' if current == 'institutional' }"
     %li
       = image_tag 'legal_logo_gray.png', class: 'link-logo'
       = link_to 'Jurídico', legal_path, class: "legal #{ 'active' if current == 'legal' }"
@@ -37,4 +38,4 @@
       = image_tag 'sample_collection_structure_logo_gray.png', class: 'link-logo'
       = link_to 'Implementação de posto de coleta de exames', sample_collection_structure_path, class: "sample-collection-structure #{ 'active' if current == 'sample_collection_structure' }"
 
-= link_to 'Contato', root_path(anchor: 'contato'), class: 'contact-link'
+  = link_to 'Contato', root_path(anchor: 'contato'), class: 'contact-link'
