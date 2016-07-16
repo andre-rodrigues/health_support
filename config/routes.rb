@@ -14,5 +14,7 @@ Rails.application.routes.draw do
   get 'seguro-de-vida', as: :life_insurance, controller: 'static_pages', action: 'index', page: 'life_insurance'
   get 'estrutura-para-coleta-de-exames', as: :sample_collection_structure, controller: 'static_pages', action: 'index', page: 'sample_collection_structure'
 
+  post 'home_contact' => 'application#home_contact'
+
   resources :interested_users, only: [:index, :create]
 end

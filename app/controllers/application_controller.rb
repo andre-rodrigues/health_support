@@ -7,4 +7,15 @@ class ApplicationController < ActionController::Base
 
   def index
   end
+
+  def home_contact
+    ApplicationMailer.home_contact(
+      params[:name],
+      params[:email],
+      params[:specialty],
+      params[:message],
+    ).deliver_now
+
+    redirect_to root_path
+  end
 end

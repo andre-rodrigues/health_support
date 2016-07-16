@@ -6,7 +6,11 @@ class ApplicationMailer < ActionMailer::Base
     @email = email
     @specialty = specialty
     @message = message
-    mail(to: 'a.andremr@gmail.com', from: 'suporte@healthsupport.com.br', subject: 'Contato de usuário Health Support')
-    # TODO: trocar to: para contato@healthsupport.com.br
+
+    mail(
+      to: 'contato@healthsupport.com.br',
+      from: 'contato@healthsupport.com.br',
+      subject: 'Contato de usuário Health Support'
+    )
   end
 end
