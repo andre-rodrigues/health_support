@@ -36,6 +36,13 @@ $(function() {
         backgroundColor: 'rgba(68, 68, 68, 0.9)',
         height: newHeight
       }, 400);
+
+      $(document).on('keyup', function(e) {
+        if (e.keyCode == 27) {
+          $(document).off('keyup');
+          hideMenu();
+        };
+      });
     }
 
     var hideMenu = function() {

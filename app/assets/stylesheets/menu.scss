@@ -3,11 +3,18 @@
 header {
   text-align: center;
 
+  .wrapper {
+    width: 920px;
+    height: 95px;
+    margin: auto;
+  }
+
   .home {
     text-decoration: none;
     display: inline-block;
     vertical-align: top;
     margin-top: 15px;
+    float: left;
 
     img {
       vertical-align: middle;
@@ -16,11 +23,8 @@ header {
 }
 
 .menu {
+  float: right;
   position: relative;
-  text-align: right;
-  display: inline-block;
-  margin: 0 10px 0 10%;
-  min-width: 500px;
 
   .close {
     position: absolute;
@@ -80,6 +84,8 @@ header {
     padding: 0;
     position: absolute;
     right: 100px;
+    text-align: right;
+    min-width: 500px;
 
     .link-logo  {
       height: 30px;
@@ -90,7 +96,6 @@ header {
 
     li {
       padding: 12px 0;
-      max-width: 500px;
     }
   }
 
